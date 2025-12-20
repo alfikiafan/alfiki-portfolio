@@ -1,16 +1,9 @@
 <script setup lang="ts">
-// --- EXPLICIT IMPORTS ---
 import { computed } from "vue";
-import { usePortfolio } from "@/composables/usePortfolio";
-
-// Ambil data projects
-const { projects } = usePortfolio();
-
-// Filter hanya yang 'featured' (Narajiwa & Dely Sign)
-const featuredProjects = computed(() => projects.filter((p) => p.featured));
-
-// Filter sisanya (Dely Terbilang, dll)
-const otherProjects = computed(() => projects.filter((p) => !p.featured));
+import { useProjects } from "@/composables/useProjects";
+const { projects } = useProjects();
+const featuredProjects = computed(() => projects.filter((p) => p.tier === 1));
+const otherProjects = computed(() => projects.filter((p) => p.tier === 2));
 </script>
 
 <template>
@@ -44,17 +37,15 @@ const otherProjects = computed(() => projects.filter((p) => !p.featured));
 							class="relative rounded-2xl overflow-hidden border border-dark-border bg-dark-card shadow-2xl transition-transform duration-500 group-hover:-translate-y-2"
 						>
 							<div
-								class="aspect-video bg-slate-800 flex items-center justify-center text-slate-600"
+								class="aspect-video bg-slate-800 flex items-center justify-center text-slate-600 overflow-hidden"
 							>
 								<img
 									v-if="project.image"
 									:src="project.image"
 									:alt="project.title"
-									class="w-full h-full object-cover"
+									class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
 								/>
-								<span v-else class="font-mono text-sm"
-									>Image Placeholder: {{ project.title }}</span
-								>
+								<span v-else class="font-mono text-sm">Image Placeholder</span>
 							</div>
 						</div>
 					</div>
@@ -122,7 +113,7 @@ const otherProjects = computed(() => projects.filter((p) => !p.featured));
 					class="text-xl font-bold text-slate-200 mb-8 flex items-center gap-2"
 				>
 					<Icon name="heroicons:beaker" class="text-primary-500" />
-					The Dely Labs Experiments
+					The Dely Labs Products
 				</h3>
 
 				<div class="grid md:grid-cols-3 gap-6">
@@ -133,9 +124,9 @@ const otherProjects = computed(() => projects.filter((p) => !p.featured));
 					>
 						<div class="flex justify-between items-start mb-4">
 							<Icon name="heroicons:folder" class="text-primary-600 w-8 h-8" />
-							<a :href="project.link" class="text-slate-300 hover:text-white"
-								><Icon name="heroicons:arrow-up-right"
-							/></a>
+							<a :href="project.link" class="text-slate-300 hover:text-white">
+								<Icon name="heroicons:arrow-up-right" />
+							</a>
 						</div>
 
 						<h4
@@ -158,6 +149,15 @@ const otherProjects = computed(() => projects.filter((p) => !p.featured));
 						</div>
 					</div>
 				</div>
+			</div>
+
+			<div class="mt-12 text-center">
+				<NuxtLink
+					to="/projects"
+					class="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-dark-border text-slate-300 hover:text-white hover:border-primary-500 hover:bg-dark-card transition-all"
+				>
+					View All Projects Archive <Icon name="heroicons:arrow-right" />
+				</NuxtLink>
 			</div>
 		</div>
 	</section>

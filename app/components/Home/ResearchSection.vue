@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// --- EXPLICIT IMPORTS ---
 import { usePortfolio } from "@/composables/usePortfolio";
 
 const { research } = usePortfolio();

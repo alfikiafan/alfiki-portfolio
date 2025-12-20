@@ -30,7 +30,7 @@ const { services } = usePortfolio();
 					</p>
 				</div>
 				<a
-					href="mailto:contact@alfiki.com"
+					href="mailto:alfiki.diastama@gmail.com"
 					class="px-6 py-3 bg-white text-dark-bg font-bold rounded-xl hover:bg-slate-200 transition-colors flex items-center gap-2"
 				>
 					<Icon name="heroicons:envelope" /> Hire Me for Projects

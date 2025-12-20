@@ -14,7 +14,7 @@ const currentHeadline = computed(() =>
 const currentDesc = computed(() =>
 	isResearcher.value
 		? "Gemastik XVI Gold Medalist & IEEE Author. Specializing in Computer Vision efficiency."
-		: "Founder of Dely Labs. Creator of Dely Sign. I build complex, client-side applications that prioritize privacy."
+		: "Founder of Dely Labs. Creator of Dely Sign. I build high-standard applications that prioritize privacy."
 );
 
 const techStack = computed(() =>
@@ -22,7 +22,7 @@ const techStack = computed(() =>
 		? [
 				{ name: "Python", icon: "logos:python" },
 				{ name: "TensorFlow", icon: "logos:tensorflow" },
-				{ name: "NumPy", icon: "logos:numpy" },
+				{ name: "OpenCV", icon: "logos:opencv" },
 		  ]
 		: [
 				{ name: "Vue.js", icon: "logos:vue" },

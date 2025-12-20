@@ -5,102 +5,11 @@ export const usePortfolio = () => {
 		summary:
 			"Bridging the gap between rigorous Machine Learning research and user-centric, privacy-first software engineering.",
 		location: "Surakarta, Indonesia",
-		email: "contact@alfiki.com",
+		email: "alfiki.diastama@gmail.com",
 		github: "https://github.com/alfikiafan",
 		linkedin: "https://linkedin.com/in/alfiki",
 		resume: "", //
 	};
-
-	const projects = [
-		{
-			id: "dely-sign",
-			title: "Dely Sign",
-			category: "Privacy-First Tool",
-			role: "Creator & Lead Developer",
-			image: "", // Optional
-			desc: "A pure client-side web application for signing, editing, and manipulating PDF documents securely without any server uploads.",
-			challenge:
-				'The biggest hurdle was the Browser History behavior. Users expect the "Back" button to undo their last drawing/action, but standard browser behavior exits the app. Additionally, ensuring "Transparent Signatures" from raw camera input required complex pixel manipulation logic.',
-
-			solution:
-				'I implemented a custom "Fake State" strategy using the History API to intercept back-navigation for Undo/Redo actions. For image processing, I built a custom rasterization pipeline to detect background luminance and convert signatures to transparent PNGs instantly on the client side.',
-
-			keyFeatures: [
-				"100% Client-Side Processing (Zero Server Upload)",
-				"Smart History API Handling (Back button = Undo)",
-				"Auto-Transparent Signature Algorithm",
-				"PWA Share Target API (Open PDF directly from File Manager)",
-				"IndexedDB Persistence (Drafts saved locally)",
-			],
-
-			tech: ["Vue 3", "Vite", "Konva", "pdf-lib", "IndexedDB"],
-			link: "https://sign.delylabs.com",
-			featured: true,
-			stats: "v1.4 Stable",
-		},
-		{
-			id: "narajiwa",
-			title: "Narajiwa",
-			category: "Mental Health Superapp",
-			role: "Software Engineer",
-			image: "",
-			desc: "A comprehensive mental health platform connecting users with psychologists through real-time booking, chat, and assessment tools.",
-			challenge:
-				"Creating a seamless bridge between patients and psychologists while ensuring strict data privacy for medical records. The system needed to handle real-time scheduling conflicts and secure payment verification simultaneously.",
-
-			solution:
-				"Designed a scalable fullstack architecture with robust Role-Based Access Control (RBAC) for data privacy. Integrated Midtrans for secure payments and real-time WebSocket communication for the counseling chat interface.",
-
-			keyFeatures: [
-				"Real-time Counseling Chat",
-				"Automated Psychologist Booking System",
-				"Secure Medical Record Storage",
-				"Hult Prize On Campus Winner 2024",
-			],
-
-			tech: ["Laravel", "MySQL", "Bootstrap", "Real-time WebSocket"],
-			link: "https://narajiwa.com",
-			featured: true,
-			stats: "1st Place Hult Prize",
-		},
-		{
-			id: "dely-terbilang",
-			title: "Dely Terbilang",
-			category: "Productivity Algorithm",
-			role: "Creator",
-			image: "", // Optional
-			desc: "An advanced number-to-text converter capable of handling extreme precision (up to 64 digits) for financial and legal document formatting.",
-			tech: ["JavaScript", "BigInt Handling", "SheetJS", "Recursive Algorithm"],
-			link: "https://terbilang.delylabs.com",
-			featured: false,
-			descShort:
-				"Converts numbers to text up to 64 digits. Supports Excel bulk processing.",
-		},
-		{
-			id: "dely-compare",
-			title: "Dely Compare",
-			category: "Developer Tool",
-			role: "Creator",
-			image: "",
-			desc: "Text and code comparison tool utilizing Diff algorithms to highlight changes, detect plagiarism, and visualize code modifications.",
-			tech: ["Vue 3", "Diff Algorithm", "String Matching"],
-			link: "https://compare.delylabs.com",
-			featured: false,
-			descShort: "High-performance text & code comparison tool for developers.",
-		},
-		{
-			id: "dely-kit",
-			title: "Dely Kit",
-			category: "Utility Suite",
-			role: "Creator",
-			image: "",
-			desc: "A suite of text manipulation tools (Case Converter, Cleaner, Sorter) designed for quick developer tasks without leaving the browser.",
-			tech: ["Vue 3", "Regex Engine"],
-			link: "https://kit.delylabs.com",
-			featured: false,
-			descShort: "All-in-one text manipulation toolkit for developers.",
-		},
-	];
 
 	const research = [
 		{
@@ -163,7 +72,22 @@ export const usePortfolio = () => {
 			company: "Documently",
 			period: "Jan 2022 - Oct 2025",
 			type: "Business",
-			desc: "Managed business operations, product development, and financial planning for a document services startup.",
+			desc: "Managed business operations, product development, and financial planning for a document services.",
+		},
+	];
+
+	const education = [
+		{
+			school: "Universitas Sebelas Maret",
+			degree: "Bachelor of Computer Science (Informatics)",
+			year: "2021 - 2025",
+			desc: "Focus on Artificial Intelligence and Software Engineering. Active in Gemastik and Laboratory Assistant.",
+		},
+		{
+			school: "Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka",
+			degree: "Machine Learning Cohort (Distinction Graduate)",
+			year: "Aug 2023 - Jan 2024",
+			desc: "Capstone Project: AGU-NET (Top 50 Product). Mastered TensorFlow, Python, and Model Deployment.",
 		},
 	];
 
@@ -238,9 +162,9 @@ export const usePortfolio = () => {
 
 	return {
 		profile,
-		projects,
 		research,
 		experience,
+		education,
 		awards,
 		skills,
 		services,

@@ -8,7 +8,6 @@ import HomeResearchSection from "@/components/Home/ResearchSection.vue";
 import HomeExperienceSection from "@/components/Home/ExperienceSection.vue";
 import HomeServicesSection from "@/components/Home/ServicesSection.vue";
 
-// SEO Meta Tags
 useHead({
 	title: "Alfiki Diastama | Software Engineer & Researcher",
 	meta: [
