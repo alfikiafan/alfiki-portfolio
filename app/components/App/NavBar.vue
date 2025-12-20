@@ -31,12 +31,9 @@ const links = [
 		<div class="container mx-auto px-6 flex justify-between items-center">
 			<NuxtLink
 				to="/"
-				class="text-xl font-bold font-sans tracking-tight flex items-center gap-2 group"
+				class="text-xl font-bold font-sans tracking-tight flex items-center gap-3 group"
 			>
-				<span
-					class="w-8 h-8 rounded-lg bg-primary-600 flex items-center justify-center text-white font-mono text-sm group-hover:bg-primary-500 transition-colors"
-					>A</span
-				>
+				<img class="w-7 h-7" src="/images/logo.webp" alt="Logo" />
 				<span class="text-slate-200 group-hover:text-white transition-colors"
 					>Alfiki</span
 				>

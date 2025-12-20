@@ -105,7 +105,9 @@ if (!project.value) {
 							class="bg-dark-card border border-dark-border p-8 rounded-2xl"
 						>
 							<div class="flex items-start gap-4">
-								<div class="p-3 bg-red-500/10 rounded-lg text-red-400 shrink-0">
+								<div
+									class="p-3 bg-yellow-500/10 rounded-lg text-yellow-400 shrink-0"
+								>
 									<Icon name="heroicons:exclamation-triangle" size="24" />
 								</div>
 								<div>

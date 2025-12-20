@@ -6,6 +6,7 @@ import HomeSkillsSection from "@/components/Home/SkillsSection.vue";
 import HomeFeaturedProjects from "@/components/Home/FeaturedProjects.vue";
 import HomeResearchSection from "@/components/Home/ResearchSection.vue";
 import HomeExperienceSection from "@/components/Home/ExperienceSection.vue";
+import HomeCertifications from "~/components/Home/Certifications.vue";
 import HomeServicesSection from "@/components/Home/ServicesSection.vue";
 
 useHead({
@@ -31,6 +32,7 @@ useHead({
 		<HomeFeaturedProjects />
 		<HomeResearchSection />
 		<HomeExperienceSection />
+		<HomeCertifications />
 		<HomeServicesSection />
 
 		<AppFooter />

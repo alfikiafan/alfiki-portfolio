@@ -199,9 +199,9 @@ const socialLinks = [
 							class="absolute inset-0 rounded-[1.5rem] md:rounded-[2rem] overflow-hidden border border-slate-700/50 bg-slate-800 z-10 transition-transform duration-500 group-hover:-rotate-2 group-hover:scale-105 shadow-2xl"
 						>
 							<img
-								src="https://placehold.co/600x600/1e293b/0284c7?text=Alfiki"
+								src="/images/alfiki-photo.webp"
 								alt="Alfiki"
-								class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+								class="w-full h-full object-cover transition-all duration-500"
 							/>
 						</div>
 					</div>

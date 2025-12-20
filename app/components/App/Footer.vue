@@ -41,11 +41,8 @@ const socials = [
 				class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12"
 			>
 				<div>
-					<div class="flex items-center gap-2 mb-4">
-						<span
-							class="w-8 h-8 rounded-lg bg-primary-600 flex items-center justify-center text-white font-mono text-sm"
-							>A</span
-						>
+					<div class="flex items-center gap-3 mb-4">
+						<img class="w-8 h-8" src="/images/logo.webp" alt="Logo" />
 						<span class="text-xl font-bold text-slate-200 tracking-tight"
 							>Alfiki Diastama</span
 						>
