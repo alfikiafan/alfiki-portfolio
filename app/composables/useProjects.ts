@@ -11,7 +11,16 @@ export const useProjects = () => {
 			year: "2025 - Present",
 			tags: ["Web App", "Privacy", "Tool"],
 			image: "/images/dely-sign.webp",
-			desc: "A privacy-first PDF tool designed for performance. Processes documents entirely in the browser using GPU-accelerated rendering, ensuring sensitive data never leaves the user's device.",
+			desc: "A privacy-first PDF tool designed for performance and zero-knowledge security.",
+			impactStory: {
+				problem:
+					"Users hesitate to upload sensitive documents to third-party servers for signing.",
+				solution:
+					"Engineered a 100% client-side rendering engine using GPU acceleration.",
+				result:
+					"Zero data leaks (GDPR compliant) & native-app performance in-browser.",
+			},
+
 			challenge:
 				"The initial implementation suffered from performance bottlenecks during zoom operations due to CPU-heavy re-rendering. Additionally, implementing a 'Transparent Signature' feature from raw camera input without server-side processing required complex pixel manipulation logic.",
 			solution:
@@ -21,8 +30,7 @@ export const useProjects = () => {
 				"GPU-Accelerated Zoom & Pan",
 				"Auto-Transparent Signature Algorithm",
 				"Smart History API (Undo/Redo)",
-				"Auto-Transparent Signature",
-				"PWA Offline Capable & Share Target API",
+				"PWA Offline Capable",
 			],
 			tech: ["Vue 3", "Vite", "Konva", "pdf-lib", "IndexedDB"],
 			link: "https://sign.delylabs.com",
@@ -37,11 +45,20 @@ export const useProjects = () => {
 			year: "2024 - Present",
 			tags: ["Web App", "Mental Health"],
 			image: "/images/narajiwa.webp",
-			desc: "A comprehensive mental health platform bridging patients and psychologists. Features a complex booking system, real-time consultation chat, and role-based content management.",
+			desc: "A comprehensive mental health platform bridging clients and psychologists.",
+			impactStory: {
+				problem:
+					"Synchronizing complex schedules between psychologists & clients often caused double-bookings.",
+				solution:
+					"Built a concurrency-safe booking system with atomic locking & real-time sockets.",
+				result:
+					"Automated the entire clinical workflow from booking to payment verification.",
+			},
+
 			challenge:
-				"Designing a booking system that handles race conditions (double booking) while synchronizing with Google Calendar constraints. The UX was also challenging: creating a multi-step wizard (Specialization -> Doctor -> Profile -> Schedule -> Payment) that feels seamless while validating strict business logic like 'Instant Counseling' availability.",
+				"Designing a booking system that handles race conditions (double booking) while synchronizing with Google Calendar constraints. The UX was also challenging: creating a multi-step wizard that feels seamless while validating strict business logic.",
 			solution:
-				"Built a robust Laravel backend with atomic locking to prevent race conditions during booking. Integrated Pusher for a feature-rich chat system (typing indicators, reply, delete). Implemented strict RBAC for 4 user roles and integrated Midtrans for secure, automated payment verification.",
+				"Built a robust Laravel backend with atomic locking to prevent race conditions during booking. Integrated Pusher for a feature-rich chat system. Implemented strict RBAC for 4 user roles and integrated Midtrans for secure payments.",
 			keyFeatures: [
 				"Real-time Chat (Pusher w/ Websocket)",
 				"Concurrency-Safe Booking System",

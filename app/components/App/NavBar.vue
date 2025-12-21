@@ -27,10 +27,11 @@ onMounted(() => window.addEventListener("scroll", handleScroll));
 onUnmounted(() => window.removeEventListener("scroll", handleScroll));
 
 const links = [
+	{ name: "About", to: "/#about" },
 	{ name: "Skills", to: "/#skills" },
 	{ name: "Projects", to: "/#projects" },
-	{ name: "Research", to: "/#research" },
 	{ name: "Experience", to: "/#experience" },
+	{ name: "Research", to: "/#research" },
 	{ name: "Services", to: "/#services" },
 ];
 </script>

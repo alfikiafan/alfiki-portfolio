@@ -8,7 +8,7 @@ const currentRole = computed(() =>
 );
 const currentHeadline = computed(() =>
 	isResearcher.value
-		? "Bridging Deep Learning Research with Real-World Utility."
+		? "Applying Deep Learning Research to Real-World Systems"
 		: "Building Privacy-First Web Products & Scalable Systems."
 );
 const currentDesc = computed(() =>

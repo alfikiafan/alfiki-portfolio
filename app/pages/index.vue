@@ -2,6 +2,7 @@
 import AppNavBar from "@/components/App/NavBar.vue";
 import AppFooter from "@/components/App/Footer.vue";
 import HomeHeroSection from "@/components/Home/HeroSection.vue";
+import HomeAboutSection from "~/components/Home/AboutSection.vue";
 import HomeSkillsSection from "@/components/Home/SkillsSection.vue";
 import HomeFeaturedProjects from "@/components/Home/FeaturedProjects.vue";
 import HomeResearchSection from "@/components/Home/ResearchSection.vue";
@@ -28,10 +29,11 @@ useHead({
 		<AppNavBar />
 
 		<HomeHeroSection />
+		<HomeAboutSection />
 		<HomeSkillsSection />
 		<HomeFeaturedProjects />
-		<HomeResearchSection />
 		<HomeExperienceSection />
+		<HomeResearchSection />
 		<HomeCertifications />
 		<HomeServicesSection />
 

@@ -74,12 +74,57 @@ const otherProjects = computed(() => projects.filter((p) => p.tier === 2));
 							:to="`/projects/${project.id}`"
 							class="inline-block hover:text-primary-400 transition-colors"
 						>
-							<h3 class="text-3xl font-bold mb-4 text-slate-100">
+							<h3 class="text-3xl font-bold mb-6 text-slate-100">
 								{{ project.title }}
 							</h3>
 						</NuxtLink>
 
-						<p class="text-slate-300 mb-6 leading-relaxed">
+						<div v-if="project.impactStory" class="space-y-4 mb-8">
+							<div class="flex gap-3 items-start">
+								<div
+									class="mt-1 p-1.5 rounded bg-red-500/10 text-red-400 shrink-0"
+								>
+									<Icon name="heroicons:exclamation-triangle" size="16" />
+								</div>
+								<p class="text-sm text-slate-300 leading-snug">
+									<strong
+										class="text-slate-100 block text-xs uppercase tracking-wide opacity-70 mb-0.5"
+										>The Challenge</strong
+									>
+									{{ project.impactStory.problem }}
+								</p>
+							</div>
+							<div class="flex gap-3 items-start">
+								<div
+									class="mt-1 p-1.5 rounded bg-blue-500/10 text-blue-400 shrink-0"
+								>
+									<Icon name="heroicons:wrench-screwdriver" size="16" />
+								</div>
+								<p class="text-sm text-slate-300 leading-snug">
+									<strong
+										class="text-slate-100 block text-xs uppercase tracking-wide opacity-70 mb-0.5"
+										>My Solution</strong
+									>
+									{{ project.impactStory.solution }}
+								</p>
+							</div>
+							<div class="flex gap-3 items-start">
+								<div
+									class="mt-1 p-1.5 rounded bg-green-500/10 text-green-400 shrink-0"
+								>
+									<Icon name="heroicons:rocket-launch" size="16" />
+								</div>
+								<p class="text-sm text-slate-300 leading-snug">
+									<strong
+										class="text-slate-100 block text-xs uppercase tracking-wide opacity-70 mb-0.5"
+										>The Impact</strong
+									>
+									{{ project.impactStory.result }}
+								</p>
+							</div>
+						</div>
+
+						<p v-else class="text-slate-300 mb-6 leading-relaxed">
 							{{ project.desc }}
 						</p>
 
@@ -104,7 +149,7 @@ const otherProjects = computed(() => projects.filter((p) => p.tier === 2));
 							<a
 								:href="project.link"
 								target="_blank"
-								class="text-slate-300 hover:text-white text-sm"
+								class="text-slate-400 hover:text-white text-sm"
 							>
 								Visit Site
 								<Icon name="heroicons:arrow-up-right" class="w-3 h-3 inline" />
@@ -119,7 +164,7 @@ const otherProjects = computed(() => projects.filter((p) => p.tier === 2));
 					class="text-xl font-bold text-slate-200 mb-8 flex items-center gap-2"
 				>
 					<Icon name="heroicons:beaker" class="text-primary-500" />
-					The Dely Labs Products
+					Dely Labs Products
 				</h3>
 
 				<div class="grid md:grid-cols-3 gap-6">
@@ -134,7 +179,7 @@ const otherProjects = computed(() => projects.filter((p) => p.tier === 2));
 							<Icon name="heroicons:folder" class="text-primary-600 w-8 h-8" />
 							<Icon
 								name="heroicons:arrow-up-right"
-								class="text-slate-400 group-hover:text-white transition-colors"
+								class="text-slate-500 group-hover:text-white transition-colors"
 							/>
 						</div>
 
@@ -143,7 +188,7 @@ const otherProjects = computed(() => projects.filter((p) => p.tier === 2));
 						>
 							{{ project.title }}
 						</h4>
-						<p class="text-slate-300 text-sm mb-4 line-clamp-3 flex-grow">
+						<p class="text-slate-400 text-sm mb-4 line-clamp-3 flex-grow">
 							{{ project.desc }}
 						</p>
 
@@ -151,7 +196,7 @@ const otherProjects = computed(() => projects.filter((p) => p.tier === 2));
 							<span
 								v-for="tech in project.tech"
 								:key="tech"
-								class="text-xs text-slate-400 font-mono"
+								class="text-xs text-slate-500 font-mono"
 							>
 								#{{ tech }}
 							</span>

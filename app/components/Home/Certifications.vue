@@ -14,7 +14,8 @@ const { certifications } = useCertifications();
 					Licenses & <span class="text-primary-400">Certifications</span>
 				</h2>
 				<p class="text-slate-300 text-lg">
-					Validated expertise in Machine Learning and Engineering.
+					Continuous professional development in Machine Learning and Software
+					Engineering.
 				</p>
 			</div>
 
