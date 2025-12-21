@@ -6,7 +6,7 @@ const { skills } = usePortfolio();
 <template>
 	<section
 		id="skills"
-		class="py-24 bg-dark-bg border-t border-dark-border relative overflow-hidden"
+		class="py-24 scroll-mt-12 bg-dark-bg border-t border-dark-border relative overflow-hidden"
 	>
 		<div
 			class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-primary-900/10 blur-[120px] rounded-full pointer-events-none"

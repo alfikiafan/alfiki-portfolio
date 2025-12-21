@@ -157,7 +157,7 @@ if (!project.value) {
 								<li
 									v-for="feature in project.keyFeatures"
 									:key="feature"
-									class="flex items-start gap-2 text-slate-400 text-sm"
+									class="flex items-start gap-2 text-slate-300"
 								>
 									<Icon
 										name="heroicons:check-circle"

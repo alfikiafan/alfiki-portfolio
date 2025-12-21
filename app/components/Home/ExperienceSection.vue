@@ -13,7 +13,7 @@ const isTrophy = (text: string) => {
 <template>
 	<section
 		id="experience"
-		class="py-24 bg-dark-bg relative border-t border-dark-border"
+		class="py-12 md:py-24 scroll-mt-16 bg-dark-bg relative border-t border-dark-border"
 	>
 		<div class="container mx-auto px-6">
 			<div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
@@ -73,18 +73,21 @@ const isTrophy = (text: string) => {
 								></div>
 
 								<div
-									class="flex justify-between items-start mb-2 relative z-10"
+									class="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-2 relative z-10"
 								>
 									<h3
 										class="text-lg font-bold text-slate-200 group-hover:text-white transition-colors"
 									>
 										{{ edu.school }}
 									</h3>
+
 									<span
-										class="text-xs font-mono text-purple-400 bg-purple-500/10 px-2 py-1 rounded whitespace-nowrap ml-2"
-										>{{ edu.year }}</span
+										class="text-xs font-mono text-purple-400 bg-purple-500/10 px-2 py-1 rounded whitespace-nowrap w-fit md:ml-2"
 									>
+										{{ edu.year }}
+									</span>
 								</div>
+
 								<div class="text-slate-300 font-medium mb-3 relative z-10">
 									{{ edu.degree }}
 								</div>

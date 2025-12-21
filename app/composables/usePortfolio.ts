@@ -11,6 +11,44 @@ export const usePortfolio = () => {
 		resume: "", //
 	};
 
+	const skills = {
+		development: [
+			{ name: "JavaScript", icon: "logos:javascript" },
+			{ name: "TypeScript", icon: "logos:typescript-icon" },
+			{ name: "Vue.js", icon: "logos:vue" },
+			{ name: "Nuxt", icon: "logos:nuxt-icon" },
+			{ name: "React", icon: "logos:react" },
+			{ name: "Next.js", icon: "logos:nextjs-icon", darkInfo: true },
+			{ name: "Laravel", icon: "logos:laravel" },
+			{ name: "PHP", icon: "logos:php" },
+			{ name: "Supabase", icon: "logos:supabase-icon" },
+			{ name: "Tailwind", icon: "logos:tailwindcss-icon" },
+			{ name: "Bootstrap", icon: "logos:bootstrap" },
+			{ name: "Docker", icon: "logos:docker-icon" },
+			{ name: "Git", icon: "logos:git-icon" },
+			{ name: "Vite", icon: "logos:vitejs" },
+			{ name: "Node.js", icon: "logos:nodejs-icon" },
+			{ name: "MySQL", icon: "logos:mysql-icon", darkInfo: true },
+			{ name: "PostgreSQL", icon: "logos:postgresql" },
+			{ name: "Firebase", icon: "devicon:firebase" },
+			{ name: "Figma", icon: "logos:figma" },
+		],
+		ai_data: [
+			{ name: "Python", icon: "logos:python" },
+			{ name: "TensorFlow", icon: "logos:tensorflow" },
+			{ name: "Scikit-learn", icon: "devicon:scikitlearn" },
+			{ name: "Pandas", icon: "devicon:pandas", darkInfo: true },
+			{ name: "Streamlit", icon: "logos:streamlit" },
+			{ name: "Flask", icon: "devicon:flask", darkInfo: true },
+			{ name: "Jupyter", icon: "logos:jupyter" },
+			{ name: "OpenCV", icon: "logos:opencv" },
+			{ name: "Keras", icon: "devicon:keras" },
+			{ name: "NumPy", icon: "logos:numpy" },
+			{ name: "Matplotlib", icon: "devicon:matplotlib" },
+			{ name: "PyTorch", icon: "devicon:pytorch" },
+		],
+	};
+
 	const research = [
 		{
 			title:
@@ -18,7 +56,7 @@ export const usePortfolio = () => {
 			venue: "Gemastik XVI 2023 - Gold Medal & Best Paper",
 			year: "2023",
 			desc: "Proposed a novel deep learning architecture combining Attention mechanisms with GhostNet modules. Achieved superior segmentation accuracy while reducing model parameters by significant margins, making it viable for deployment on resource-constrained medical devices.",
-			link: "#",
+			link: "https://buletingemastik.id/index.php/bg/article/view/12",
 		},
 		{
 			title:
@@ -26,7 +64,7 @@ export const usePortfolio = () => {
 			venue: "IEEE Publication (International)",
 			year: "2024",
 			desc: "Introduced a hybrid architecture using ConvMixer for feature extraction in colorectal polyp segmentation. Published and presented at IEEE conference.",
-			link: "https://ieeexplore.ieee.org",
+			link: "https://ieeexplore.ieee.org/abstract/document/10812309",
 		},
 		{
 			title:
@@ -34,14 +72,14 @@ export const usePortfolio = () => {
 			venue: "IEEE Publication",
 			year: "2024",
 			desc: "Optimized U-Net backbone with Factorized Residual blocks to handle variable polyp shapes and sizes effectively.",
-			link: "https://ieeexplore.ieee.org",
+			link: "https://ieeexplore.ieee.org/abstract/document/10845587",
 		},
 		{
 			title: "Sentiment Analysis Classification In Women's E-commerce Reviews",
 			venue: "Jurnal Teknik Informatika (JUTIF)",
 			year: "2024",
 			desc: "Comparative analysis of Naive Bayes, SVM, and KNN with ROS/SMOTE handling for imbalanced datasets. Achieved 94% Accuracy using SVM+ROS.",
-			link: "#",
+			link: "http://jutif.if.unsoed.ac.id/index.php/jurnal/article/view/2392",
 		},
 	];
 
@@ -87,7 +125,7 @@ export const usePortfolio = () => {
 			school: "Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka",
 			degree: "Machine Learning Cohort (Distinction Graduate)",
 			year: "Aug 2023 - Jan 2024",
-			desc: "Capstone Project: AGU-NET (Top 50 Product). Mastered TensorFlow, Python, and Model Deployment.",
+			desc: "Capstone Project: EUY App (Top 50 Product). Mastered TensorFlow, Python, and Model Deployment.",
 		},
 	];
 
@@ -100,44 +138,6 @@ export const usePortfolio = () => {
 		"Innovation Excellence Awardee FATISDA UNS 2024",
 		"Distinction Graduate - Bangkit Academy 2023",
 	];
-
-	const skills = {
-		development: [
-			{ name: "JavaScript", icon: "logos:javascript" },
-			{ name: "TypeScript", icon: "logos:typescript-icon" },
-			{ name: "Vue.js", icon: "logos:vue" },
-			{ name: "Nuxt", icon: "logos:nuxt-icon" },
-			{ name: "React", icon: "logos:react" },
-			{ name: "Next.js", icon: "logos:nextjs-icon", darkInfo: true },
-			{ name: "Laravel", icon: "logos:laravel" },
-			{ name: "PHP", icon: "logos:php" },
-			{ name: "Supabase", icon: "logos:supabase-icon" },
-			{ name: "Tailwind", icon: "logos:tailwindcss-icon" },
-			{ name: "Bootstrap", icon: "logos:bootstrap" },
-			{ name: "Docker", icon: "logos:docker-icon" },
-			{ name: "Git", icon: "logos:git-icon" },
-			{ name: "Vite", icon: "logos:vitejs" },
-			{ name: "Node.js", icon: "logos:nodejs-icon" },
-			{ name: "MySQL", icon: "logos:mysql-icon", darkInfo: true },
-			{ name: "PostgreSQL", icon: "logos:postgresql" },
-			{ name: "Firebase", icon: "devicon:firebase" },
-			{ name: "Figma", icon: "logos:figma" },
-		],
-		ai_data: [
-			{ name: "Python", icon: "logos:python" },
-			{ name: "TensorFlow", icon: "logos:tensorflow" },
-			{ name: "Scikit-learn", icon: "devicon:scikitlearn" },
-			{ name: "Pandas", icon: "devicon:pandas", darkInfo: true },
-			{ name: "Streamlit", icon: "logos:streamlit" },
-			{ name: "Flask", icon: "devicon:flask", darkInfo: true },
-			{ name: "Jupyter", icon: "logos:jupyter" },
-			{ name: "OpenCV", icon: "logos:opencv" },
-			{ name: "Keras", icon: "devicon:keras" },
-			{ name: "NumPy", icon: "logos:numpy" },
-			{ name: "Matplotlib", icon: "devicon:matplotlib" },
-			{ name: "PyTorch", icon: "devicon:pytorch" },
-		],
-	};
 
 	const services = [
 		{

@@ -4,7 +4,10 @@ const { services } = usePortfolio();
 </script>
 
 <template>
-	<section id="services" class="py-24 bg-dark-card relative overflow-hidden">
+	<section
+		id="services"
+		class="py-12 md:py-24 scroll-mt-16 bg-dark-card relative overflow-hidden"
+	>
 		<div
 			class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none opacity-10"
 		>
@@ -18,7 +21,7 @@ const { services } = usePortfolio();
 
 		<div class="container mx-auto px-6 relative z-10">
 			<div
-				class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6"
+				class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6"
 			>
 				<div>
 					<h2 class="text-3xl font-bold mb-4">

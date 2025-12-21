@@ -120,7 +120,7 @@ export const useProjects = () => {
 			tags: ["Web App", "Robotics"],
 			desc: "Official team website with custom full-text search engine for static content and dynamic articles.",
 			tech: ["Nuxt", "Tailwind", "Content API"],
-			link: "https://github.com/alfikiafan/roboboat-bengawan",
+			link: "#",
 			image: "",
 			featured: false,
 		},
@@ -145,7 +145,7 @@ export const useProjects = () => {
 			tags: ["AI & Data", "NLP"],
 			desc: "Advanced NLP using ResNet, Bi-LSTM, and CNN to visualize sentiment distribution from app reviews.",
 			tech: ["Python", "Bi-LSTM", "NLP"],
-			link: "https://github.com/alfikiafan/sentiment-analysis",
+			link: "https://github.com/alfikiafan/app-reviews-sentiment-analysis",
 			featured: false,
 		},
 		{
@@ -157,7 +157,7 @@ export const useProjects = () => {
 			tags: ["AI & Data", "Recommender System"],
 			desc: "Hybrid engine (Content-based & Collaborative Filtering) for travel destinations.",
 			tech: ["Python", "TensorFlow", "RecSys"],
-			link: "https://github.com/alfikiafan/tourism-recommender",
+			link: "https://github.com/alfikiafan/tourism-destination-recommender",
 			featured: false,
 		},
 		{
@@ -181,7 +181,7 @@ export const useProjects = () => {
 			tags: ["AI & Data", "Data Analysis"],
 			desc: "Data analysis project to identify key indicators of heart disease using statistical modeling.",
 			tech: ["Python", "Pandas"],
-			link: "#",
+			link: "https://github.com/alfikiafan/heart-disease-analytics",
 			featured: false,
 		},
 		{
@@ -193,7 +193,7 @@ export const useProjects = () => {
 			tags: ["AI & Data", "Data Visualization"],
 			desc: "Time-series analysis of air quality data to visualize trends and pollutant levels.",
 			tech: ["Python", "Matplotlib"],
-			link: "#",
+			link: "https://github.com/alfikiafan/air-quality-analysis",
 			featured: false,
 		},
 
@@ -305,7 +305,7 @@ export const useProjects = () => {
 			tags: ["Web App", "Educational"],
 			desc: "Simulation of Turing Machines to demonstrate computational theories.",
 			tech: ["JS", "HTML5"],
-			link: "https://github.com/alfikiafan/turing-machine-simulator",
+			link: "https://github.com/alfikiafan/turing-simulation",
 			featured: false,
 		},
 		{

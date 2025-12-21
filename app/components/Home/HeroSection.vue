@@ -129,7 +129,7 @@ const socialLinks = [
 									View Work
 								</a>
 								<a
-									href="#"
+									href="https://drive.google.com/file/d/1XerM2A20jR5xc0BYbUzj5aWssdqQBhXH/view?usp=sharing"
 									target="_blank"
 									class="px-5 py-2.5 border border-dark-border hover:bg-dark-card text-slate-300 rounded-lg transition-all font-bold text-sm md:px-6 md:py-3"
 								>
@@ -175,9 +175,7 @@ const socialLinks = [
 									class="flex items-center gap-1.5 md:gap-2 text-slate-400 hover:text-primary-400 transition-colors"
 								>
 									<Icon :name="tech.icon" class="w-4 h-4 md:w-5 md:h-5" />
-									<span class="text-[10px] md:text-sm font-medium">{{
-										tech.name
-									}}</span>
+									<span class="text-sm font-medium">{{ tech.name }}</span>
 								</div>
 							</TransitionGroup>
 						</div>
