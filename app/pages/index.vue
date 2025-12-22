@@ -11,7 +11,7 @@ import HomeCertifications from "~/components/Home/Certifications.vue";
 import HomeServicesSection from "@/components/Home/ServicesSection.vue";
 
 useHead({
-	title: "Alfiki Diastama | Software Engineer & Researcher",
+	title: "Alfiki Diastama | Software Engineer, AI Engineer",
 	meta: [
 		{
 			name: "description",

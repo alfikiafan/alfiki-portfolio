@@ -32,6 +32,7 @@ const links = [
 	{ name: "Projects", to: "/#projects" },
 	{ name: "Experience", to: "/#experience" },
 	{ name: "Research", to: "/#research" },
+	{ name: "Certifications", to: "/#certifications" },
 	{ name: "Services", to: "/#services" },
 ];
 </script>

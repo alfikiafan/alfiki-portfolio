@@ -1,7 +1,7 @@
 export const usePortfolio = () => {
 	const profile = {
 		name: "Alfiki Diastama",
-		role: "Software Engineer & AI Researcher",
+		role: "Software Engineer, AI Engineer",
 		summary:
 			"Bridging the gap between rigorous Machine Learning research and user-centric, privacy-first software engineering.",
 		location: "Surakarta, Indonesia",

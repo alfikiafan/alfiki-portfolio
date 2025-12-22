@@ -5,7 +5,7 @@ export default defineNuxtConfig({
 
 	app: {
 		head: {
-			title: "Alfiki Diastama | Software Engineer & Researcher",
+			title: "Alfiki Diastama | Software Engineer, AI Engineer",
 			meta: [
 				{
 					name: "description",
