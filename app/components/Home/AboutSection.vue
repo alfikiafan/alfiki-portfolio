@@ -1,7 +1,7 @@
 <template>
 	<section
 		id="about"
-		class="py-28 scroll-mt-40 bg-dark-bg border-b border-dark-border/50"
+		class="py-28 scroll-mt-32 md:scroll-mt-28 bg-dark-bg border-b border-dark-border/50"
 	>
 		<div class="container mx-auto px-6 max-w-4xl text-center">
 			<h2 class="sr-only">About Me</h2>
